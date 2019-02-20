@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Rock Pickers
 
-## Available Scripts
+Mike has had enough of his city-slicker sons complaining about cleaning the bathrooms, folding laundry, and other household chores. Luke and his younger brothers are off to learn what it's like to work on a farm.
 
-In the project directory, you can run:
+To make it more enjoyable, the brothers are going to make it a competition to see who can pick the most rocks. Create a rock picking tracker so they don't lose count.
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`fork`, `clone`, and `npm install`. The `App.js` and `RockCounter` components have already been started. No changes should be necessary to `App.js` for the Base Requirements. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Base Requirements
 
-### `npm test`
+- When the `Increase` button is clicked, the total count for that brother should increase by `1`.
+- When the `Decrease` button is clicked, the total count for that brother should decrease by `1`.
+- When the `Reset` button is clicked, the total count for that brother should be set to `0`.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Stretch
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Keep the counts above 0 (don't allow a decrease below 0)
+- The brothers can stop after they pick 50 rocks. Put the word "Done" next to the number picked if they have picked 50 or more rocks (will need conditional rendering)
+- Keep a total count of all rocks picked (Will need to use props with functions. This is a BIG stretch.)
