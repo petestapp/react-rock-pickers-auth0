@@ -14,6 +14,8 @@ To make it more enjoyable, the brothers are going to make it a competition to se
 - When the `Decrease` button is clicked, the total count for that brother should decrease by `1`.
 - When the `Reset` button is clicked, the total count for that brother should be set to `0`.
 
+A deployed version of base mode can be found here: https://react-rock-pickers.netlify.com/
+
 ## Stretch
 
 - Keep the counts above 0 (don't allow a decrease below 0)
