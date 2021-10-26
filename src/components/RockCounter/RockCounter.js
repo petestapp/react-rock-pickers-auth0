@@ -14,6 +14,17 @@ function RockCounter() {
   const resetCount = ()=>{
     setRocks(0);
   }
+  let isDone = false;
+  const checkIfDone = ()=>{
+    if (rocks>=10){
+      isDone = true;
+    }
+    else {
+      isDone = false;
+    }
+  }
+  checkIfDone();
+  
   return (
     <div>
       <div>Rocks Picked: {rocks}</div>
@@ -21,6 +32,7 @@ function RockCounter() {
         <button onClick={increaseCount}>Increase</button>
         <button onClick={decreaseCount}>Decrease</button>
         <button onClick={resetCount}>Reset</button>
+        <p>{isDone ? `Done`: `Not Done`}</p>
       </div>
     </div>
   );
