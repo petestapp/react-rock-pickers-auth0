@@ -9,7 +9,7 @@ function RockCounter() {
     setRocks(rocks + 1);
   }
   const decreaseCount = ()=>{
-    setRocks(rocks - 1);
+    rocks < 1 ? setRocks(0) : setRocks(rocks - 1);
   }
   const resetCount = ()=>{
     setRocks(0);
@@ -24,7 +24,7 @@ function RockCounter() {
     }
   }
   checkIfDone();
-  
+
   return (
     <div>
       <div>Rocks Picked: {rocks}</div>
