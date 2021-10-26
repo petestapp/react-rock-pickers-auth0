@@ -6,15 +6,13 @@ function RockCounter() {
   const[rocks, setRocks] = useState(0);
 
   const increaseCount = ()=>{
-    console.log('in increaseCount');
     setRocks(rocks + 1);
   }
   const decreaseCount = ()=>{
-    console.log('in decreaseCount');
     setRocks(rocks - 1);
   }
   const resetCount = ()=>{
-    console.log('in resetCount');
+    setRocks(0);
   }
   return (
     <div>
