@@ -24,7 +24,7 @@ export const Auth0ProviderWithHistory = ({ children }) => {
             authorizationParams={{
                 redirect_uri: redirectUri,
             }}
-            onRedirectCallback={onRedirectCallback}
+            // onRedirectCallback={onRedirectCallback}
             >
             {children}
         </Auth0Provider>

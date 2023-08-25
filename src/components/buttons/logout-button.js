@@ -7,7 +7,7 @@ export const LogoutButton = () => {
     const handleLogout = () => {
         logout({
             logoutParams: {
-                returnTo: window.location.origin,
+                returnTo: "http://localhost:3000/",
             },
         });
     };
