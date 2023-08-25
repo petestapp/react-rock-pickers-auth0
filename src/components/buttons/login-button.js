@@ -4,10 +4,6 @@ import React from "react";
 export const LoginButton = () => {
     const { loginWithRedirect } = useAuth0();
 
-    const handleLoginCallback = () => {
-        console.log("Login callback result:");
-    }
-
     const handleLogin = () => {
         loginWithRedirect();
     };

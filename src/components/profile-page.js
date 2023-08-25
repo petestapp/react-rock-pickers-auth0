@@ -12,10 +12,7 @@ export const ProfilePage = () => {
         <div>
             <h1>Profile Page</h1>
             <h2>{user.email}</h2>
-            {/*<CodeSnippet*/}
-            {/*    title="Decoded ID Token"*/}
-            {/*    code={JSON.stringify(user, null, 2)}*/}
-            {/*/>*/}
+            <h2>ID token: {JSON.stringify(user, null, 2)}</h2>
         </div>
     )
 }
