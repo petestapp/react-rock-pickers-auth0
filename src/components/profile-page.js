@@ -12,7 +12,7 @@ export const ProfilePage = () => {
         <div>
             <h1>Profile Page</h1>
             <h2>{user.email}</h2>
-            <img src={user.picture} />
+            <img src={user.picture}  alt="user icon consisting of first two letters of name"/>
             <h2>ID token: {JSON.stringify(user, null, 2)}</h2>
         </div>
     )

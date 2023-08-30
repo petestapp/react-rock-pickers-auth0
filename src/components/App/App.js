@@ -3,12 +3,14 @@ import './App.css';
 import RockCounter from '../RockCounter/RockCounter';
 import {Navbar} from "../navbar/navbar";
 import {ProfilePage} from "../profile-page";
+import {RockList} from "../RockList/rocklist";
 
 function App() {
     return (
         <div>
             <Navbar/>
             <ProfilePage />
+            <RockList />
             <header>
                 <h1>React Rock Pickers</h1>
                 <p>
