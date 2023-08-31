@@ -3,7 +3,7 @@ import './App.css';
 import RockCounter from '../RockCounter/RockCounter';
 import {Navbar} from "../navbar/navbar";
 import {ProfilePage} from "../profile-page";
-import {RockList} from "../RockList/rocklist";
+import {RockList} from "../RockList/RockList";
 
 function App() {
     return (

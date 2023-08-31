@@ -10,10 +10,18 @@ interface Rock {
 export const RockList: React.FC = () => {
     const [rockList, setRockList] = useState<Rock[]>([]);
 
+
+    const { user, getAccessTokenSilently } = useAuth0();
+
     useEffect(() => {
         const fetchRocks = async () => {
             try {
-                const response = await axios.get<Rock[]>("http://localhost:8080/getAllRocks");
+                const token = await getAccessTokenSilently();
+                const response = await axios.get<Rock[]>("http://localhost:6060/getAllRocks", {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    }
+                });
                 console.log(`response:`, response);
                 setRockList(response.data);
             } catch (error) {
@@ -22,9 +30,7 @@ export const RockList: React.FC = () => {
         };
 
         fetchRocks();
-    }, []);
-
-    const { user } = useAuth0();
+    }, [getAccessTokenSilently]);
 
     if (!user) {
         return null;
