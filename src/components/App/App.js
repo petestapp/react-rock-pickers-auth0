@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import RockCounter from '../RockCounter/RockCounter';
 import {Navbar} from "../navbar/navbar";
-import {ProfilePage} from "../profile-page";
+import {ProfilePage} from "../ProfilePage/ProfilePage";
 import {RockList} from "../RockList/RockList";
 
 function App() {
